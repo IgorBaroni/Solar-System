@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/icon.png">
+    <title>Solar System</title>
+</head>
+<body>
+    <div onclick="sun()" id="sun"></div>
+    <div onclick="mercury()" id="mercury"></div>
+    <div onclick="star()" id="star"></div>
+    <div onclick="venus()" id="venus"></div>
+    <div onclick="comet()"id="comet"></div>
+    <div onclick="earth()" id="earth"></div>
+    <div onclick="moon()" id="moon"></div>
+    <div onclick="mars()" id="mars"></div>
+    <div onclick="jupiter()" id="jupiter"></div>
+    <div onclick="saturn()" id="saturn"></div>
+    <div onclick="uranus()" id="uranus"></div>
+    <div onclick="neptune()" id="neptune"></div>
+    <button class="sound" id="sound" title="Song made by Ivymusic"></button>
+    <audio id="audio">
+        <source src="audio/song.mp3" type="audio/mpeg"/>
+    </audio>
+  
+<div class="modalsun">
+    <dialog id="dialogsun" class="dialogsun">
+            <br>
+            <h2>Sun</h2><br>
+            <button id="btnclosesun" onclick="closesun()">Close</button>
+            <p>The Sun is a <b>star</b> at the center of the Solar System. 
+                It has a diameter of 1,392,700 km which makes it 109 times wider than Earth. The Sun is composed primarily of the chemical elements hydrogen and helium.<br><br>The Sun is 10k °F (5,500 °C) at the surface, and 27 million °F (15 million °C) in the core.<br><br>The Sun radiates its energy mainly as light, ultraviolet, and infrared radiation, and is the most important source of energy for life on Earth.</p>
+                <img src="img/sun.gif" alt="sun" class="sunimg"/>
+    </dialog>
+</div>
+
+<div class="modalmerc">
+    <dialog id="dialogmerc"  class="dialogmerc">
+            <br>
+            <h2>Mercury</h2><br>
+            <button id="btnclosemerc" onclick="closemerc()">Close</button>
+            <p>The Mercury is the smallest planet in the Solar System with an equatorial radius of 2,439.7 kilometres. And it is the closest to the Sun.<br><br>Mercury's surface appears heavily cratered and is similar in appearance to the Moon's, indicating that it has been geologically inactive for billions of years.<br><br>Having almost no atmosphere to retain heat, it has surface temperatures that vary diurnally more than on any other planet in the Solar System, ranging from −280 °F (−173 °C) at night, to 800 °F<br>(427 °C) during the day.</p>
+            <img src="img/mercury.gif" alt="mercury" class="mercimg"/>
+    </dialog>
+</div>
+
+<div class="modalstar">
+    <dialog id="dialogstar" class="dialogstar">
+            <br>
+            <h2>Star</h2><br>
+            <button id="btnclosestar" onclick="closestar()">Close</button>
+            <p>A star is an astronomical object comprising a luminous spheroid of plasma held together by self-gravity.<br><br>A star's life begins with the gravitational collapse of a gaseous nebula of material composed primarily of hydrogen, along with helium and trace amounts of heavier elements.<br><br>As time goes by the star evolves into a red giant. Then, it expands and becomes a red supergiant. Finally the supergiants destroy themselves in a huge explosion, called a supernova.</p>
+            <img src="img/star.gif" alt="star" class="starimg"/>
+    </dialog>
+</div>
+
+<div class="modalven">
+    <dialog id="dialogven" class="dialogven">
+            <br>
+            <h2>Venus</h2><br>
+            <button id="btncloseven" onclick="closeven()">Close</button>
+            <p>The Venus is the second planet from the Sun. It is sometimes called Earth's "sister" or "twin" as it is almost as large and has a similar composition.<br><br>The atmosphere of Venus consists mainly of carbon dioxide, and, at the planet’s surface, is the densest and hottest of the atmospheres of the four terrestrial planets. Aside from the Sun and Moon, Venus is the brightest natural object in Earth's sky.<br><br>The CO2-rich atmosphere generates the strongest greenhouse effect in the Solar System, creating surface temperatures of at least 864 °F (462 °C). This makes the Venusian surface hotter than Mercury's.</p>
+            <img src="img/venus.gif" alt="venus" class="venimg"/>
+    </dialog>
+</div>
+
+<div class="modalcom">
+    <dialog id="dialogcom" class="dialogcom">
+            <br>
+            <h2>Comet</h2><br>
+            <button id="btnclosecom" onclick="closecom()">Close</button>
+            <p>A comet is an icy, small Solar System body that warms and begins to release gases when passing close to the Sun, a process called outgassing. This produces an extended, gravitationally unbound atmosphere or coma surrounding the nucleus, and sometimes a tail of gas and dust gas blown out from the coma.<br><br> The comet nucleus is thought to be no more than about 16 kilometers across. They are composed of loose collections of ice, dust, and small rocky particles.</p>
+            <img src="img/comet.gif" alt="comet" class="comimg"/>
+    </dialog>
+</div>
+
+<div class="modalear">
+    <dialog id="dialogear" class="dialogear">
+            <br>
+            <h2>Earth</h2><br>
+            <button id="btncloseear" onclick="closeear()">Close</button>
+            <p>The Earth is the third planet from the Sun and the only place known in the universe where life has originated and found habitability. While large volumes of water can be found throughout the Solar System, only Earth sustains liquid surface water.<br><br>Approximately 70.8% of Earth's surface is made up of the ocean, dwarfing Earth's polar ice, lakes, and rivers. The remaining 29.2% of Earth's surface is land, consisting of continents and islands.<br><br>The surface air temperature can rise to around 131 °F (55 °C) in hot deserts, and can fall as low as −128 °F (-89 °C) in Antarctica.</p>
+            <img src="img/earth.gif" alt="earth" class="earimg"/>
+    </dialog>
+</div>
+
+<div class="modalmoo">
+    <dialog id="dialogmoo" class="dialogmoo">
+            <br>
+            <h2>Moon</h2><br>
+            <button id="btnclosemoo" onclick="closemoo()">Close</button>
+            <p>The Moon is Earth's only natural satellite. It is the fifth largest satellite in the Solar System and the largest and most massive relative to its parent planet with a diameter about one-quarter that of Earth. The Moon is a planetary-mass object with a differentiated rocky body.<br><br>Daytime temperatures near the lunar equator reach a boiling 250 °F (120 °C), while nighttime temperatures get to a chilly -208 °F (-130 °C).<br><br>Half of the Moon’s surface is always illuminated by sunlight. As the Moon orbits Earth, it changes how much of the lit-up side we can see. Each month, the Moon goes through its four phases: New Moon, First Quarter, Full Moon and Third Quarter.</p>
+            <img src="img/moon.gif" alt="moon" class="mooimg"/>
+    </dialog>
+</div>
+
+<div class="modalmar">
+    <dialog id="dialogmar" class="dialogmar">
+            <br>
+            <h2>Mars</h2><br>
+            <button id="btnclosemar" onclick="closemar()">Close</button>
+            <p>The Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, larger only than Mercury. Mars has two small, irregularly shaped moons, Phobos and Deimos.<br><br>Mars is a terrestrial planet with a thin atmosphere and has a crust primarily composed of elements similar to Earth's crust, as well as a core made of iron and nickel. Mars has surface features such as impact craters, valleys, dunes, and polar ice caps.<br><br>Temperatures on Mars average about -81 °F (-62 °C). However, it can range from around -220 °F (-140 °C) to 70 °F (21 °C). </p>
+            <img src="img/mars.gif" alt="mars" class="marimg"/>
+    </dialog>
+</div>
+
+<div class="modaljup">
+    <dialog id="dialogjup" class="dialogjup">
+            <br>
+            <h2>Jupiter</h2><br>
+            <button id="btnclosejup" onclick="closejup()">Close</button>
+            <p>The Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass more than two and a half times of all the other planets in the Solar System combined. Overall, Jupiter's average temperature is -238 °F (-150 °C).<br><br>Jupiter is primarily composed of hydrogen, followed by helium. Jupiter is the third brightest natural object in the Earth's night sky after the Moon and Venus.<br><br>Jupiter has 95 known moons and probably many more, including the four large moons: Io, Europa, Ganymede, and Callisto.</p>
+            <img src="img/jupiter.gif" alt="jupiter" class="jupimg"/>
+    </dialog>
+</div>
+
+<div class="modalsat">
+    <dialog id="dialogsat" class="dialogsat">
+            <br>
+            <h2>Saturn</h2><br>
+            <button id="btnclosesat" onclick="closesat()">Close</button>
+            <p>The Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth.<br><br>Saturn's interior is most likely composed of a rocky core, surrounded by a deep layer of metallic hydrogen, an intermediate layer of liquid hydrogen and liquid helium, and finally, a gaseous outer layer.<br><br>The planet's most notable feature is its prominent ring system, which is composed mainly of ice particles, with a smaller amount of rocky debris and dust.</p>
+            <img src="img/saturn.gif" alt="saturn" class="satimg"/>
+    </dialog>
+</div>
+
+<div class="modalura">
+    <dialog id="dialogura" class="dialogura">
+            <br>
+            <h2>Uranus</h2><br>
+            <button id="btncloseura" onclick="closeura()">Close</button>
+            <p>The Uranus is the seventh planet from the Sun. Uranus has the third-largest planetary radius and fourth-largest planetary mass in the Solar System. Uranus is composed primarily of gases and liquids, so it has no well-defined solid surface.<br><br>Uranus has the coldest planetary atmosphere in the Solar System, with a minimum temperature of −371 °F (−224 °C).<br><br>The planet is similar in composition to Neptune, and both have bulk chemical compositions which differ from those of the other two giant planets, Jupiter and Saturn (the gas giants). For this reason, scientists often distinguish Uranus and Neptune as "ice giants".</p>
+            <img src="img/uranus.gif" alt="uranus" class="uraimg"/>
+    </dialog>
+</div>
+
+<div class="modalnep">
+    <dialog id="dialognep" class="dialognep">
+            <br>
+            <h2>Neptune</h2><br>
+            <button id="btnclosenep" onclick="closenep()">Close</button>
+            <p>The Neptune is the eighth planet from the Sun and the farthest known planet in the Solar System. It is the fourth-largest planet in the Solar System by diameter, the third-most-massive planet, and the densest giant planet.<br><br>Neptune's atmosphere is composed primarily of hydrogen and helium, along with traces of hydrocarbons and possibly nitrogen. Being composed primarily of gases and liquids, it has no well-defined solid surface.<br><br>The planet's average temperature is -353 °F (-214 °C). But despite being the most distant planet, it is not the coldest. That honor goes to the seventh planet, Uranus.</p>
+            <img src="img/neptune.gif" alt="neptune" class="nepimg"/>
+    </dialog>
+</div>
+    <h2 class="text">Only compatible in Google Chrome</h2>
+    <h2 class="text2">Made by<br> Igor Baroni</h2>
+</body>
+<script src="script.js"></script>
+</html>

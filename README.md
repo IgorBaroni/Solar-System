@@ -1,5 +1,5 @@
 # Solar-System
-Solar System app made with HTML, CSS and JS<br>
+Solar System app made using HTML, CSS and JS<br>
 The app was made for Google Chrome and Opera GX, other browsers may work badly
 
 # Files
